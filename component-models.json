@@ -260,5 +260,80 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "navbar",
+    "fields": []
+  },
+  {
+    "id": "navbar-logos",
+    "fields": []
+  },
+  {
+    "id": "navbar-logo-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Logo",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt text",
+        "value": ""
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "link",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "navbar-idiomas",
+    "fields": []
+  },
+  {
+    "id": "navbar-idioma-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Texto"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "link",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "navbar-secciones",
+    "fields": []
+  },
+  {
+    "id": "navbar-seccion-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Título"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "link",
+        "label": "Link"
+      }
+    ]
   }
 ]

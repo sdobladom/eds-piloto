@@ -7,7 +7,9 @@ function Carousel({ items }) {
       <${Fragment}>
         ${items.map((item, i) => html`
           <div className='carousel_item' key=${i}>
-            <img src="${item.img}">
+            <div className='image'>
+                <img src="${item.img}"/>
+            </div>
             <div className='text_container'>
                 <div className='text_content'>
                     <h1 className='text_content-title'>${item.title}</h1>
@@ -23,19 +25,30 @@ function Carousel({ items }) {
 
 export default function decorate(block) {
 
-    const data = [...block.querySelectorAll('[data-aue-component="carousel-item"]')]
+    console.log(block.innerHTML)
+
+    const data = [...block.querySelectorAll(':scope > div')]
         .map(row => {
+
+            const cols = row.querySelectorAll(':scope > div')
+
+            console.log(cols)
+            const size = cols.length;
+
             const button = {
-                link: row.querySelector('a')?.href ?? '',
-                text: row.querySelector('[data-aue-prop="buttonText"]')?.textContent.trim() ?? ''
+                link: row?.querySelector('a')?.href ?? '',
+                text: cols[size - 2]?.querySelector('p')?.textContent.trim() ?? ''
             }
             return {
-                img: row.querySelector('[data-aue-prop="image"]')?.src ?? '',
-                title: row.querySelector('[data-aue-prop="title"]').textContent.trim(),
-                paragraph: [(row.querySelectorAll('[data-richtext-prop="paragraph"]') ?? [])].map(p => p.textContent.trim()),
+                img: row?.querySelector('img')?.src ?? '',
+                title: cols[1]?.querySelector('p')?.textContent.trim(),
+                paragraph: [...(cols[2]?.querySelectorAll('p') ?? [])].map(p => p.textContent.trim()),
                 button
             }
         })
+
+
+    console.log(data)
 
   block.innerHTML = '';
 

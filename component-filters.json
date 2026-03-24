@@ -15,8 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "carousel"
+      "fragment"
     ]
   },
   {
@@ -44,6 +43,32 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "navbar",
+    "components": [
+      "navbar-logos",
+      "navbar-idiomas",
+      "navbar-secciones"
+    ]
+  },
+  {
+    "id": "navbar-logos",
+    "components": [
+      "navbar-logo-item"
+    ]
+  },
+  {
+    "id": "navbar-idiomas",
+    "components": [
+      "navbar-idioma-item"
+    ]
+  },
+  {
+    "id": "navbar-secciones",
+    "components": [
+      "navbar-seccion-item"
     ]
   }
 ]

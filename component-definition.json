@@ -186,6 +186,115 @@
               }
             }
           }
+        },
+        {
+          "title": "Nav Bar",
+          "id": "navbar",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "navbar",
+                  "model": "navbar",
+                  "filter": "navbar"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Navbar Logos",
+          "id": "navbar-logos",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "navbar-logos",
+                  "model": "navbar-logos",
+                  "filter": "navbar-logos"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Navbar Logo Item",
+          "id": "navbar-logo-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "navbar-logo-item",
+                  "model": "navbar-logo-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Navbar Idiomas",
+          "id": "navbar-idiomas",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "navbar-idiomas",
+                  "model": "navbar-idiomas",
+                  "filter": "navbar-idiomas"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Navbar Idioma Item",
+          "id": "navbar-idioma-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "navbar-idioma-item",
+                  "model": "navbar-idioma-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Navbar Secciones",
+          "id": "navbar-secciones",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "navbar-secciones",
+                  "model": "navbar-secciones",
+                  "filter": "navbar-secciones"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Navbar Seccion Item",
+          "id": "navbar-seccion-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "navbar-seccion-item",
+                  "model": "navbar-seccion-item"
+                }
+              }
+            }
+          }
         }
       ]
     }
